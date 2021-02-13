@@ -1,0 +1,190 @@
+<!DOCTYPE html> 
+<html> 
+  <head>
+    <title>CHLOE ORIOTIS</title> 
+    <link href="C:\Projects\My_Website\style_v3.css" type="text/css" 
+    rel="stylesheet">
+
+    <!-- setting the viewport for a responsive site -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- The font Bungee Inline -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
+    <!-- The font Bungee Shade -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" 
+    rel="stylesheet">
+    
+    <!-- The font Libre Barcode 128 Text -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+  
+  </head>
+
+  <body> 
+
+    <div class="example_header"> 
+      <header>
+        Godiva's Crown
+      </header>
+    </div>
+
+    <ul>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Explore</a>
+        <!-- img src="navbar_icon.png" alt="Navbar Icon", style="width: 20%" -->
+        <div class="dropdown-content">
+          <a href="index.html">Welcome!</a>
+          <a href="projects.html">Projects</a>
+          <a href="professional-experience.html">Professional Experience</a>
+          <a href="competitions-and-builds.html">Competitions & Builds</a>
+          <a class="active" href="extracurriculars.html">Extracurriculars & Fun Stuff</a>
+          <a href="contact-me.html">Contact Me!</a>
+        </div>
+      </li>
+    </ul>
+
+    <!-- the lightbox = example -->
+<div class="example">
+    <div class="example_row">
+      <div class="example_column">
+        <img src="gc_ex_3.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="example_column">
+        <img src="gc_ex_4.JPG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="example_column">
+        <img src="gc_ex_5.JPG" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="example_column">
+        <img src="gc_ex_2.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="gc_ex_3.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="gc_ex_4.JPG" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="gc_ex_5.JPG" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="gc_ex_2.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="example_column">
+          <img class="demo cursor" src="gc_ex_3.jpg" style="width:100%" onclick="currentSlide(1)" 
+          alt="My friends help me perform my Godiva's Crown audition with an atrium full of students watching on">
+        </div>
+        <div class="example_column">
+          <img class="demo cursor" src="gc_ex_4.JPG" style="width:100%" onclick="currentSlide(2)" 
+          alt="I help hold U of T Engineering's flag as the Lady Godiva Memorial Band marches in the Toronto Santa Claus Parade">
+        </div>
+        <div class="example_column">
+          <img class="demo cursor" src="gc_ex_5.JPG" style="width:100%" onclick="currentSlide(3)" 
+          alt="I introduce myself to the first-years and bring some cheer during Frosh Week 2018">
+        </div>
+        <div class="example_column">
+          <img class="demo cursor" src="gc_ex_2.jpg" style="width:100%" onclick="currentSlide(4)" 
+          alt="My Co-Spirit Head and I emcee the 2018 graduation dinner dance">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="example_meat">
+  <h2>
+    2018
+  </h2>
+  <h1>
+    Overview
+  </h1>
+  <p>
+  Godiva's Crown is Skule's Spirit Head, tasked with bringing engineering spirit to all 5500 engineers at U of T. 
+  I performed a skit, sang, and did a comedy routine in front of hundreds of my peers as part of the competition to win the Crown, and was voted in by a panel of student judges (including the previous year's Godiva's Crown) to win. 
+  <br><br>
+  During my year as GC, I attended as many Skule events as possible, including dinner dances, graduation ceremonies, and Toronto's Pride and Santa Claus Parades to spread engineering cheer. 
+  I also raised almost $600 in the name of Skule for Holland Bloorview Hospital's Capes for Kids fundraiser with my friend and Co-Spirit Head, Mr. Blue and Gold.  
+
+  </div>
+
+
+
+
+<!-- JAVASCRIPT AAAHAHHAHAHAHAHH -->
+  <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+
+    <div class="footer">
+      <span class="footer_links">
+      <a href="content_2">
+        <img src="email_black.png" alt="Email Link";/>
+      </a>
+      <a href="https://www.linkedin.com/in/chloeoriotis/">
+        <img src="linkedin_black.png" alt="LinkedIn Link";/>
+      </a>
+      </span>
+      <span class="footer_credit">Website by Chloe Oriotis, 2021</span>
+    </div>
+    
+  </body>  

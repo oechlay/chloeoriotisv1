@@ -1,0 +1,209 @@
+<!DOCTYPE html> 
+<html> 
+  <head>
+    <title>Aerlift Capstone Project</title> 
+    <link href="C:\Projects\My_Website\style_v3.css" type="text/css" 
+    rel="stylesheet">
+
+    <!-- setting the viewport for a responsive site -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- The font Bungee Inline -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
+    <!-- The font Bungee Shade -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" 
+    rel="stylesheet">
+    
+    <!-- The font Libre Barcode 128 Text -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+  
+  </head>
+
+  <body> 
+
+    <div class="example_header"> 
+      <header>
+        Aerodynamic & Structural Designer: 
+        <br>Aerlift Inc.
+      </header>
+    </div>
+
+    <ul>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Explore</a>
+        <!-- img src="navbar_icon.png" alt="Navbar Icon", style="width: 20%" -->
+        <div class="dropdown-content">
+          <a href="index_v3.html">Welcome!</a>
+          <a href="projects.html">Projects</a>
+          <a class="active" href="professional-experience.html">Professional Experience</a>
+          <a href="competitions-and-builds.html">Competitions & Builds</a>
+          <a href="extracurriculars.html">Extracurriculars & Fun Stuff</a>
+          <a href="contact-me.html">Contact Me!</a>
+        </div>
+      </li>
+    </ul>
+
+    <!-- the lightbox = example -->
+<div class="example">
+    <div class="example_row">
+      <div class="example_column">
+        <img src="aerlift_ex_3.PNG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="example_column">
+        <img src="aerlift_ex_2.PNG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="example_column">
+        <img src="aerlift_ex_5.gif" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="example_column">
+        <img src="aerlift_ex_4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="aerlift_ex_3.PNG" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="aerlift_ex_2.PNG" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="aerlift_ex_5.gif" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="aerlift_ex_4.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="example_column">
+          <img class="demo cursor" src="aerlift_ex_3.PNG" style="width:100%" onclick="currentSlide(1)" 
+          alt="XFLR 3D model of an early iteration of the drone, for aerodynamic analysis.">
+        </div>
+        <div class="example_column">
+          <img class="demo cursor" src="aerlift_ex_2.PNG" style="width:100%" onclick="currentSlide(2)" 
+          alt="Transparent SolidWorks model of an early iteration of the drone, showing potential propeller, payload, and battery placements.">
+        </div>
+        <div class="example_column">
+          <img class="demo cursor" src="aerlift_ex_5.gif" style="width:100%" onclick="currentSlide(3)" 
+          alt="Early aerodynamic simulation of drone fuselage using SolidWorks Flow.">
+        </div>
+        <div class="example_column">
+          <img class="demo cursor" src="aerlift_ex_4.jpg" style="width:100%" onclick="currentSlide(4)" 
+          alt="Our team meeting over Zoom while discussing wing shape optimization.">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="example_meat">
+  <h2>
+    August 2020 - Present
+  </h2>
+  <h1>
+    Overview
+  </h1>
+  <p>
+    For my fourth-year Capstone project, myself and my team of peers are working with Aerlift Inc., a company that is creating a system that delivers crucial medical supplies from urban hospitals to rural clinics in Rwanda and the Democratic Republic of Congo. 
+    We are designing a drone that will be delivering these medical supplies (like blood for transfusions, vaccines, etc.), focussing on aerodynamics and structure while ensuring client needs are met and maximizing efficiency. 
+    We are supported by the Centre for Global Engineering within the University of Toronto.
+ 
+  </p>
+  <h1>
+    Skills Used
+  </h1>
+  <p>
+    Designing a drone from the ground-up involves a lot of research. Once
+    ANSYS, XFLR, SolidWorks
+    <br><br>
+    what skills did you use? demonstrated x by doing y
+  </p>
+  <h1>
+    what i learned
+  </h1>
+  <p>
+  Drone design is a highly interdependent design challenge! 
+  For example, very efficient wings are long and thin,AHHHHH
+  It's difficult, but depth over breadth
+  Scope is so difficult to pin down. Changes as we find out what we dont know
+  I'm proud of myself for taking on this project despite having no previous experience with aerodynamics or flight design.
+  </p>
+</div>
+
+
+
+
+<!-- JAVASCRIPT AAAHAHHAHAHAHAHH -->
+  <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+
+    <div class="footer">
+      <span class="footer_links">
+      <a href="content_2">
+        <img src="email_black.png" alt="Email Link";/>
+      </a>
+      <a href="https://www.linkedin.com/in/chloeoriotis/">
+        <img src="linkedin_black.png" alt="LinkedIn Link";/>
+      </a>
+      </span>
+      <span class="footer_credit">Website by Chloe Oriotis, 2021</span>
+    </div>
+    
+  </body>  

@@ -1,0 +1,180 @@
+<!DOCTYPE html> 
+<html> 
+  <head>
+    <title>CHLOE ORIOTIS</title> 
+    <link href="C:\Projects\My_Website\style_v3.css" type="text/css" 
+    rel="stylesheet">
+
+    <!-- setting the viewport for a responsive site -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- The font Bungee Inline -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
+    <!-- The font Bungee Shade -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" 
+    rel="stylesheet">
+    
+    <!-- The font Libre Barcode 128 Text -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+  
+  </head>
+
+  <body> 
+
+    <div class="example_header"> 
+      <header>
+        Machined Air Piston
+      </header>
+    </div>
+
+    <ul>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Explore</a>
+        <!-- img src="navbar_icon.png" alt="Navbar Icon", style="width: 20%" -->
+        <div class="dropdown-content">
+          <a href="index.html">Welcome!</a>
+          <a class="active" href="projects.html">Projects</a>
+          <a href="professional-experience.html">Professional Experience</a>
+          <a href="competitions-and-builds.html">Competitions & Builds</a>
+          <a href="extracurriculars.html">Extracurriculars & Fun Stuff</a>
+          <a href="contact-me.html">Contact Me!</a>
+        </div>
+      </li>
+    </ul>
+
+    <!-- the lightbox = example -->
+<div class="example">
+    <div class="example_row">
+      <div class="example_column">
+        <img src="piston_ex_1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="example_column">
+        <img src="piston_ex_2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 2</div>
+          <img src="piston_ex_1.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 2</div>
+          <img src="piston_ex_2.jpg" style="width:100%">
+        </div>
+
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="example_column">
+          <img class="demo cursor" src="piston_ex_1.jpg" style="width:100%" onclick="currentSlide(1)" 
+          alt="Front view of the piston I machined">
+        </div>
+        <div class="example_column">
+          <img class="demo cursor" src="piston_ex_2.jpg" style="width:100%" onclick="currentSlide(2)" 
+          alt="Back view of the piston">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="example_meat">
+  <h2>
+    2018
+  </h2>
+  <h1>
+    Overview
+  </h1>
+  <p>
+    I received a George Brown College Basic Machining Certificate after taking their course in second year.
+    In the program I machined a functioning pneumatic piston system that can also be hand cranked.
+
+  </p>
+  <h1>
+    Skills Used
+  </h1>
+  <p>
+    I developed fundamental machining skills like lathing, drill pressing and tapping. 
+    I also learned the safety precautions that are needed to be taken in machine shops with such heavy equipment.
+  </p>
+  <h1>
+    What I Learned
+  </h1>  
+  <p>
+  Machining straight holes and fine details is difficult!
+  It took many tries to perfect the delicate parts of the piston like its thin rod.
+    
+  </p>
+  </div>
+
+
+
+
+<!-- JAVASCRIPT AAAHAHHAHAHAHAHH -->
+  <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+
+    <div class="footer">
+      <span class="footer_links">
+      <a href="content_2">
+        <img src="email_black.png" alt="Email Link";/>
+      </a>
+      <a href="https://www.linkedin.com/in/chloeoriotis/">
+        <img src="linkedin_black.png" alt="LinkedIn Link";/>
+      </a>
+      </span>
+      <span class="footer_credit">Website by Chloe Oriotis, 2021</span>
+    </div>
+    
+  </body>  

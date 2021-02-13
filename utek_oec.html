@@ -1,0 +1,202 @@
+<!DOCTYPE html> 
+<html> 
+  <head>
+    <title>CHLOE ORIOTIS</title> 
+    <link href="C:\Projects\My_Website\style_v3.css" type="text/css" 
+    rel="stylesheet">
+
+    <!-- setting the viewport for a responsive site -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- The font Bungee Inline -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
+    <!-- The font Bungee Shade -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" 
+    rel="stylesheet">
+    
+    <!-- The font Libre Barcode 128 Text -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+  
+  </head>
+
+  <body> 
+
+    <div class="example_header"> 
+      <header>
+        UTEK and Ontario Engineering Competition 
+      </header>
+    </div>
+
+    <ul>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Explore</a>
+        <!-- img src="navbar_icon.png" alt="Navbar Icon", style="width: 20%" -->
+        <div class="dropdown-content">
+          <a href="index.html">Welcome!</a>
+          <a href="projects.html">Projects</a>
+          <a href="professional-experience.html">Professional Experience</a>
+          <a class="active" href="competitions-and-builds.html">Competitions & Builds</a>
+          <a href="extracurriculars.html">Extracurriculars & Fun Stuff</a>
+          <a href="contact-me.html">Contact Me!</a>
+        </div>
+      </li>
+    </ul>
+
+    <!-- the lightbox = example -->
+<div class="example">
+    <div class="example_row">
+      <div class="example_column">
+        <img src="utek_ex_1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="example_column">
+        <img src="oec_ex_4.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="example_column">
+        <img src="oec_ex_2.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="example_column">
+        <img src="oec_ex_3.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="utek_ex_1.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="oec_ex_4.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="oec_ex_2.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="oec_ex_3.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="example_column">
+          <img class="demo cursor" src="utek_ex_1.jpg" style="width:100%" onclick="currentSlide(1)" 
+          alt="My team and I holding the Keyed Sediment Dispenser, our winning Junior Design for UTEK 2017">
+        </div>
+        <div class="example_column">
+          <img class="demo cursor" src="oec_ex_4.jpg" style="width:100%" onclick="currentSlide(2)" 
+          alt="Action shots of the Keyed Sediment Dispenser for UTEK 2017">
+        </div>
+        <div class="example_column">
+          <img class="demo cursor" src="oec_ex_2.jpg" style="width:100%" onclick="currentSlide(3)" 
+          alt="My team and I at the OEC 2017 reception in Ottawa">
+        </div>
+        <div class="example_column">
+          <img class="demo cursor" src="oec_ex_3.jpg" style="width:100%" onclick="currentSlide(4)" 
+          alt="A Timmy's-fuelled team of second-year engineers build a battery-powered car prototype for OEC 2017">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="example_meat">
+  <h2>
+    2017, 2018
+  </h2>
+  <h1>
+    Overview
+  </h1>
+  <p>
+    I participated in the 2017 and 2018 University of Toronto Engineering Competitions (UTEK), winning first place both years and having the opportunity to compete in the Ontario Engineering Competitions held in Ottawa.
+    <br>
+    <br>
+    In 2017 my team and I won in the Junior Design Competition, where we designed a device to passively sort various sediments into certain jars as they passed by on a conveyor belt.
+    Our design included four elevated reservoirs with holes at the bottom, covered by sliding doors. 
+    The doors had a uniquely cut tab on them (the "lock"), that would only be triggered by the correct jar (with the matching "key") that sild under the machine on the conveyor belt. 
+    As the door opened, the sediment would spill into the correct jar. 
+    The 2017 Ontario Engineering Competition had our team design and build a battery-powered car that would traverse a curving path of varying elevations.
+    <br>
+    <br>
+    In 2018, our team came together again to win UTEK's Re-Engineering Competition, where we designed a conceptual system for transporting mined Martian ice to a centralized location on Mars.
+    The 2018 OEC Re-Engineering Competition had us design a system for public transit on a Mars colony. 
+    <br>
+    <br>
+    I participated in these competitions when I was in my first and second years of school, and sometimes I like just looking back at my designs and appreciating how far I've come. 
+    Noticing all the things that could be improved upon is proof to me that I've developed a critical eye and gained a lot of technical knowledge in my undergrad. 
+
+  </p>  
+  </div>
+
+
+
+
+<!-- JAVASCRIPT AAAHAHHAHAHAHAHH -->
+  <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+
+    <div class="footer">
+      <span class="footer_links">
+      <a href="content_2">
+        <img src="email_black.png" alt="Email Link";/>
+      </a>
+      <a href="https://www.linkedin.com/in/chloeoriotis/">
+        <img src="linkedin_black.png" alt="LinkedIn Link";/>
+      </a>
+      </span>
+      <span class="footer_credit">Website by Chloe Oriotis, 2021</span>
+    </div>
+    
+  </body>  
