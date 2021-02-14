@@ -354,6 +354,10 @@ li a.active {
   .content_meat_null p {
     font-size: 20px;
   }
+  .dropbtn {
+    margin-right: 10vw;
+  } 
+    
   
 }
 
