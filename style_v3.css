@@ -92,6 +92,20 @@ img {
 
 /* CONTENT PAGES */
 
+.about_me {
+    /* float: left; */
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+    display: inline-flexbox;
+    background-color:rgba(255, 255, 255, 0.822);
+    /* font-size: 20px; */
+    border-color: black;
+    border-style: solid;
+    padding: 2% 2% 2% 2%;
+    text-decoration: none;
+    margin-top: 4vw;
+}
+
 /* Responsive grid-view */
 * {
     box-sizing: border-box;
@@ -745,3 +759,33 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
+.contact_me_body {
+  margin-top: 4vw;
+}
+
+.contact_me_words {
+  font-family: 'Montserrat';
+  font-size: 3vw;
+  margin-left: 1vw;
+  margin-top: 2vw;
+}
+
+.contact_me {
+  /* float: left; */
+  font-family: 'Montserrat';
+  font-size: 4vw;
+  display: inline-flexbox;
+  background-color:rgba(255, 255, 255, 0.822);
+  /* font-size: 20px; */
+  border-color: black;
+  border-style: solid;
+  padding: 2% 2% 2% 2%;
+  text-decoration: none;
+
+}
+
+.contact_me img {
+  width: 9vw;
+  display: inline;
+}
