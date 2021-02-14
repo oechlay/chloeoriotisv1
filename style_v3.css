@@ -141,6 +141,7 @@ img {
 }
 .center img {
     width: 30%;
+    height: 30%;
     margin-left: auto;
     margin-right: auto;
     /* margin-bottom: 3vw; */
