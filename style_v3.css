@@ -371,6 +371,11 @@ li a.active {
   .dropbtn {
     margin-right: 10vw;
   } 
+  
+    .index_body .dropbtn {
+  /* margin-bottom: 5vw; */
+  margin-top: 6vw;
+}
     
   
 }
