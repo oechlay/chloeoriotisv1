@@ -1,0 +1,202 @@
+<!DOCTYPE html> 
+<html> 
+  <head>
+    <title>CHLOE ORIOTIS</title> 
+    <link href="C:\Projects\My_Website\style_v3.css" type="text/css" 
+    rel="stylesheet">
+
+    <!-- setting the viewport for a responsive site -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- The font Bungee Inline -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
+    <!-- The font Bungee Shade -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" 
+    rel="stylesheet">
+    
+    <!-- The font Libre Barcode 128 Text -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+  
+  </head>
+
+  <body> 
+
+    <div class="example_header"> 
+      <header>
+        Goblin Shark Jaw Kinematic Analysis
+      </header>
+    </div>
+
+    <ul>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Explore</a>
+        <!-- img src="navbar_icon.png" alt="Navbar Icon", style="width: 20%" -->
+        <div class="dropdown-content">
+          <a href="index.html">Welcome!</a>
+          <a href="about-me.html">About Me</a>
+          <a class="active" href="projects.html">Projects</a>
+          <a href="professional-experience.html">Professional Experience</a>
+          <a href="competitions-and-builds.html">Competitions & Builds</a>
+          <a href="extracurriculars.html">Extracurriculars & Fun Stuff</a>
+          <a href="contact-me.html">Contact Me!</a>
+        </div>
+      </li>
+    </ul>
+
+    <!-- the lightbox = example -->
+<div class="example">
+    <div class="example_row">
+      <div class="example_column">
+        <img src="shark_ex_1.gif" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="example_column">
+        <img src="shark_ex_2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="example_column">
+        <img src="shark_ex_3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 3</div>
+          <img src="shark_ex_1.gif" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 3</div>
+          <img src="shark_ex_2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 3</div>
+          <img src="shark_ex_3.jpg" style="width:100%">
+        </div>
+
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="example_column">
+          <img class="demo cursor" src="shark_ex_1.gif" style="width:100%" onclick="currentSlide(1)" 
+          alt="Figure 1: The deep-sea goblin shark showing off its 'slingshot feeding' jaws">
+        </div>
+        <div class="example_column">
+          <img class="demo cursor" src="shark_ex_2.jpg" style="width:100%" onclick="currentSlide(2)" 
+          alt="Figure 2: The schematic of the goblin shark jaw mechanism">
+        </div>
+        <div class="example_column">
+          <img class="demo cursor" src="shark_ex_3.jpg" style="width:100%" onclick="currentSlide(2)" 
+          alt="Figure 3: The top-half of the goblin shark jaw mechanism's movement path">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="example_meat">
+  <h2>
+    2019
+  </h2>
+  <h1>
+    Overview
+  </h1>
+  <p>
+    I'm really into bioengineering, so for our Kinematics course assignment I convinced my team to model a biological mechanism thats equally fascinating and creepy; the goblin shark's jaw.
+    When biting, the goblin shark extends its upper and lower jaw out and away from its body and quickly snaps it around its prey.
+    I knew this was unique in the animal world so I was excited to dig into the kinematics of how this 'slingshot feeding' worked.
+    
+  </p>
+  <h1>
+    How the Mechanism Worked
+  </h1>
+  <p>
+    As can be seen in Figure 2, the mechanism is driven using a crank rocker consisting of links 2, 3, and 4. 
+    Link 2 is the input link, powered by either a motor or a hand-crank with continuous circular motion, and link 4 is the resulting oscillating output. 
+    The extended link 3 produces a continuous path at point F that is used to trace the motion of the jaws through added coupling links. 
+    Link 5 and link 9 are the output links. 
+    They hold the jaws and guide them on the correct path with the assistance of a slider, the dotted center line and a turning pair at point H. 
+    The crank rocker motion is mirrored below the centerline, the upper half being the top of the jaw and the bottom part being the lower jaw, by the addition of a second turing pair at point H, as well as the outlined equal ratio gear pair which transfers the velocity and torque to the symmetrical bottom crank rocker.   
+    
+  </p>
+  <h1>
+    Analysis Techniques
+  </h1>  
+  <p>
+  I used SolidWorks to model the moving mechanism in two-dimensions, ensuring the biological constraints such as jaw angle and extension were accurate. 
+  A position analysis, seen in Figure 3, was done in MATLAB to plot the motion of half of the model jaw.
+  Each blue triangle represents the position of point F at equally spaced points in time, given that the input rotation of link two is constant. 
+  Each rigid link is represented by a single colour. 
+  The density of the triangles provided insight into the time ratio and general relative speed of the mechanism, which was determined to be accurate to the goblin shark's bite speed.
+    
+  </p>
+  </div>
+
+
+
+
+<!-- JAVASCRIPT AAAHAHHAHAHAHAHH -->
+  <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+
+    <div class="footer">
+      <span class="footer_links">
+      <a href="contact-me.html">
+        <img src="email_black.png" alt="Email Link";/>
+      </a>
+      <a href="https://www.linkedin.com/in/chloeoriotis/">
+        <img src="linkedin_black.png" alt="LinkedIn Link";/>
+      </a>
+      </span>
+      <span class="footer_credit">Website by Chloe Oriotis, 2021</span>
+    </div>
+    
+  </body>  
