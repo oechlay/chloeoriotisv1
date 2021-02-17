@@ -438,6 +438,7 @@ li a.active {
   padding: 2% 4% 1% 0%;
   border-color: black;
   border-style: solid;
+  border-width: 1px;  
   
 }
 
@@ -458,7 +459,7 @@ li a.active {
 .content_meat img {
   border-color: black;
   border-style: solid;
-  border-width: 3px;
+  border-width: 1px;
 }
 
 .content_meat_null img {
