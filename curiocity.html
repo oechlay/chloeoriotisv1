@@ -1,0 +1,202 @@
+<!DOCTYPE html> 
+<html> 
+  <head>
+    <title>CHLOE ORIOTIS</title> 
+    <link href="C:\Projects\My_Website\style_v3.css" type="text/css" 
+    rel="stylesheet">
+
+    <!-- setting the viewport for a responsive site -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- The font Bungee Inline -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
+    <!-- The font Bungee Shade -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" 
+    rel="stylesheet">
+    
+    <!-- The font Libre Barcode 128 Text -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+  
+<!-- The font Montserrat -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+
+  </head>
+
+  <body> 
+
+    <div class="example_header"> 
+      <header>
+        Women in STEM Podcast: Curiocity 
+      </header>
+    </div>
+
+    <ul>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Explore</a>
+        <!-- img src="navbar_icon.png" alt="Navbar Icon", style="width: 20%" -->
+        <div class="dropdown-content">
+          <a href="index.html">Welcome!</a>
+          <a href="about-me.html">About Me</a>
+          <a class="active" href="projects.html">Projects</a>
+          <a href="professional-experience.html">Professional Experience</a>
+          <a href="competitions-and-builds.html">Competitions & Builds</a>
+          <a href="extracurriculars.html">Extracurriculars & Fun Stuff</a>
+          <a href="contact-me.html">Contact Me!</a>
+        </div>
+      </li>
+    </ul>
+
+    <!-- the lightbox = example -->
+<div class="example">
+    <div class="example_row">
+      <div class="example_column">
+        <img src="podcast_ex_1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <!-- <div class="example_column">
+        <img src="bot_ex_1.gif" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="example_column">
+        <img src="bot_ex_3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="example_column">
+        <img src="bot_ex_4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div> -->
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext"></div>
+          <!-- <video width="100%" controls>
+            <source src="bot_vid.mp4" type="video/mp4">
+          </video> -->
+          <iframe width="100%" height="500px"
+          src="https://www.youtube.com/embed/VZ6EkD_rI_M">
+          </iframe>
+        </div>
+    
+        <!-- <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="bot_ex_1.gif" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <video width="100%" controls>
+            <source src="bot_ex_3.mp4" type="video/mp4">
+          </video>
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="bot_ex_4.jpg" style="width:100%">
+        </div> -->
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="example_column">
+          <img class="demo cursor" src="podcast_ex_1.jpg" style="width:100%" onclick="currentSlide(1)" 
+          alt= "Our science communication project; a podcast on Women in STEM and their representation in media">
+        </div>
+        <!-- <div class="example_column">
+          <img class="demo cursor" src="bot_ex_1.gif" style="width:100%" onclick="currentSlide(2)" 
+          alt="360° view of our original robot design.">
+        </div>
+        <div class="example_column">
+          <img class="demo cursor" src="bot_ex_3.jpg" style="width:100%" onclick="currentSlide(3)" 
+          alt="A video showing our block-grabbing mechanism with the grabber I redesigned">
+        </div>
+        <div class="example_column">
+          <img class="demo cursor" src="bot_ex_4.jpg" style="width:100%" onclick="currentSlide(4)" 
+          alt="A view of the bot's Arduino controller, compass, bluetooth module, and five top-level ultrasonic sensors">
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+<div class="example_meat">
+  <h2>
+    2018
+  </h2>
+  <h1>
+    Overview
+  </h1>
+  <p>
+   In my Science and Technology in Popular Media class, my friend and I covered the intricacies of social media represenations of women in science, technology, engineering and math (STEM) in our podcast, Curiocity.
+   We interviewed a woman who's in STEM and active on social media, and had a conversation on the challenges women face from the public when posting about their lives in their professions. 
+   I'm pursuing a certificate in communication, and as a woman in STEM, working on this podcast has shown me the importance of authenticity and confidence in oneself in daily life and online.
+  </p>
+
+</div>
+
+
+
+
+<!-- JAVASCRIPT AAAHAHHAHAHAHAHH -->
+  <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+
+    <div class="footer">
+      <span class="footer_links">
+      <a href="contact-me.html">
+        <img src="email_black.png" alt="Email Link";/>
+      </a>
+      <a href="https://www.linkedin.com/in/chloeoriotis/">
+        <img src="linkedin_black.png" alt="LinkedIn Link";/>
+      </a>
+      </span>
+      <span class="footer_credit">Website by Chloe Oriotis, 2021</span>
+    </div>
+    
+  </body>  
