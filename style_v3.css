@@ -159,9 +159,8 @@ img {
     margin-left: auto;
     margin-right: auto;
     /* margin-bottom: 3vw; */
-    filter: drop-shadow(0 0 5px rgb(15, 6, 19));
-      border-width: 10px;
-  border-color: black;
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0, 0.5));
+
     
   }
 .center h2 {
