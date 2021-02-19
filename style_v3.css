@@ -502,6 +502,7 @@ li a.active {
   text-decoration: none;
   margin-bottom: 0.5vw;
   font-size: 15px;
+  float: right;
 }
 
 .content_meat_null a, h3 {
