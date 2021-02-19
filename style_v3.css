@@ -39,17 +39,23 @@ img {
 }
 
 .index_body .row {
-  margin-top: 3.25vw;
+  margin-top: 5vw;
 }
 
-.column_pic {
+.index_body .column_pic img {
   float: left;
-  width: 60%;
+  width: 30%;
+  background-color:rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  margin-left: 2vw;
 }
 
 .column_bio {
   float: left;
-  width: 40%;
+  width: 59%;
+  margin-left: 1vw;
+margin-top: 4vw;
 }
 
 .index_body .bio {
