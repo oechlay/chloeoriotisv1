@@ -386,7 +386,7 @@ li a.active {
 /* for the computers */
 @media screen and (min-width: 699px) {
   .content_meat {
-    height: 62vw;
+    height: 66vw;
   }
   .content_meat a, h3{
     font-size: 3vw;
@@ -399,7 +399,7 @@ li a.active {
   }
 
   .content_meat_null {
-    height: 62vw;
+    height: 66vw;
   }
   .content_meat_null a, h3{
     font-size: 3vw;
