@@ -286,12 +286,12 @@ li a.active {
 /* W3 Add padding BETWEEN each column (if you want) W3*/
 .row,
 .row > .column {
-  padding: 8px;
+  padding: 3vw;
 }
 
 .row,
 .row > .column_null {
-  padding: 8px;
+  padding: 3vw;
 }
 
 .row,
@@ -386,7 +386,7 @@ li a.active {
 /* for the computers */
 @media screen and (min-width: 699px) {
   .content_meat {
-    height: 70vw;
+    height: 62vw;
   }
   .content_meat a, h3{
     font-size: 3vw;
@@ -399,7 +399,7 @@ li a.active {
   }
 
   .content_meat_null {
-    height: 70vw;
+    height: 62vw;
   }
   .content_meat_null a, h3{
     font-size: 3vw;
