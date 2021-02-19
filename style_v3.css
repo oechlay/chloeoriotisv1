@@ -500,8 +500,8 @@ li a.active {
   margin-left: 1vw;
   color: black;
   text-decoration: none;
-  margin-bottom: 1vw;
-  font-size: 15px;
+  margin-bottom: 0.5vw;
+  font-size: 1vw;
 }
 
 .content_meat_null a, h3 {
