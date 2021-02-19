@@ -160,6 +160,9 @@ img {
     margin-right: auto;
     /* margin-bottom: 3vw; */
     filter: drop-shadow(0 0 5px rgb(15, 6, 19));
+      border-width: 10px;
+  border-color: black;
+    
   }
 .center h2 {
     background-image: url(C:/Projects/My_Website/bkgd_1.svg);
